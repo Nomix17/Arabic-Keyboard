@@ -91,8 +91,15 @@ void MainWindow::buttons(QStringList letters,QStringList topbuttons){
 
 void MainWindow::on_copy_clicked(){
     QString t = ui->textEdit->toPlainText();
-    std::string command = "echo -n \""+t.toStdString()+"\" | wl-copy";
+    std::string command = "echo 'Unknown DisplayServer'";
+    if(displayServer == "Wayland"){
+         command = "echo -n \""+t.toStdString()+"\" | wl-copy";
+    }else if (displayServer == "Xorg"){
+         command = "echo -n \""+t.toStdString()+"\" | xclip -selection clipboard";
+    }
+
     system(command.c_str());
+
 }
 
 void MainWindow::on_BLang_clicked(){
