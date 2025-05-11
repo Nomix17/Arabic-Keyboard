@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <cstdlib>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class VKeyboard;
@@ -31,6 +31,8 @@ private:
     QStringList shiftarnumbers;
     QStringList shiftarletters;
     bool shifted = false;
+    std::string displayServer = (std::getenv("WAYLAND_DISPLAY") != nullptr) ? "Wayland" : (std::getenv("DISPLAY") != nullptr ? "Xorg":"Unknown");
+
 };
 
 #endif
