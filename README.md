@@ -21,3 +21,13 @@ sudo dnf install qt6-qtbase-devel xclip
 ```bash
 sudo pacman -S qt6-base xclip
 ```
+
+## Installation
+
+```bash
+git clone https://github.com/Nomix17/Arabic-Keyboard
+cd Arabic-Keyboard
+chmod +x source/build.sh
+cd source
+sudo ./build.sh
+```
