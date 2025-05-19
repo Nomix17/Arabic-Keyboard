@@ -29,5 +29,5 @@ git clone https://github.com/Nomix17/Arabic-Keyboard
 cd Arabic-Keyboard
 chmod +x source/build.sh
 cd source
-sudo ./build.sh
+sudo ./build.sh $HOME
 ```
