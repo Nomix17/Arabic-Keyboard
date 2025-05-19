@@ -1,0 +1,9 @@
+[Desktop Entry]
+
+Version=1.0
+Type=Application
+Name=ArabicKeyboard
+Exec=/usr/bin/VKeyboard
+Icon=/opt/ArabicKeyboard/cache/ArabicKeyboard.png
+NoDisplay=false
+Terminal=false
