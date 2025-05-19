@@ -23,4 +23,4 @@ cp -r ../bin /opt/ArabicKeyboard/
 chmod +x /opt/ArabicKeyboard/bin/VKeyboard
 
 ln -s /opt/ArabicKeyboard/bin/VKeyboard /usr/bin/VKeyboard
-cp /opt/ArabicKeyboard/cache/ArabicKeyboard.desktop $HOME/.local/share/applications
+cp /opt/ArabicKeyboard/cache/ArabicKeyboard.desktop $1/.local/share/applications
